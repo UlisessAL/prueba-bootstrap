@@ -16,12 +16,16 @@
     justify-content: center;
 }
 
-.encabezado-navegacion-index img {
+.logo-nav img {
 
     width: 100px;
     height: 100px;
     position: relative;
 
+}
+
+.nav-link {
+    font-size: 30px;
 }
 
 .encabezado-navegacion-index ul li {
@@ -248,8 +252,10 @@ footer p {
     font-size: 15px;
     font-family: 'Pacifico', cursive;
     text-align: center;
-    margin:0 auto;
+    /* margin:0 auto; */
     background-color: rgb(236, 195, 15);
+
+    width: 100%;
 }
 
 .ubicacion-informacion p {
@@ -282,6 +288,26 @@ footer p {
     align-items: center;
     flex-direction: column;
 
+    /* Animaciones */
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+@keyframes fade-in {
+    0% {
+        transform:translateX(800px);
+    }
+
+    50%{
+        transform:rotateY(200deg);
+    }
+
+    100%{
+        transform:translateX(0px);
+    }
 }
 
 .producto-estrella-parrafo {
@@ -352,6 +378,17 @@ footer p {
 
     display: flex;
     flex-direction: column;
+
+    /* Transiciones */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .5s;
+    transition-timing-function: ease;
+
+}
+
+.otros-productos:hover {
+    transform: scale(1.2,1.2)   
 }
 
 .otros-productos img {
@@ -404,6 +441,16 @@ footer p {
 
     display: flex;
     flex-direction: column;
+
+    /* Transiciones */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .5s;
+    transition-timing-function: ease;
+}
+
+.bebidas-productos:hover {
+    transform: scale(1.2,1.2)  
 }
 
 .bebidas-productos img {
@@ -612,7 +659,6 @@ footer p {
 .contenido-ubicacion {
     background-image: url(../public/atencion-cliente-fondo.jpg);
     background-size: contain;
-
 
     display: grid;
     grid-template-areas: 
