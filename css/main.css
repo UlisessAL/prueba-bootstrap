@@ -1,0 +1,1668 @@
+
+/* inicio del encabezado del index*/
+.encabezado-index {
+    background-image: url(../public/limonada-frutos-rojos.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+
+.encabezado-navegacion-index  {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado-navegacion-index img {
+
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+
+.encabezado-navegacion-index ul li {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.encabezado-navegacion-index ul li a {
+    color: rgb(245, 229, 8) ;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+.encabezado-titulo {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+
+    padding-top: 100px;
+    margin-top: 70px;
+    
+
+}
+
+
+.encabezado-titulo h1 {
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: rgb(245, 229, 8);
+}
+
+.encabezado-titulo h3 {
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.encabezado-titulo p {
+    font-family: 'Pacifico', cursive;
+    font-size: 10px;
+    color: rgb(245, 229, 8);
+    padding-bottom: 20px;
+}
+
+/* navegacion de los otros html */
+
+.encabezado-navegacion {
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+
+    background-color: #ffcc00;
+}
+
+
+.encabezado-navegacion img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+
+.encabezado-navegacion ul {
+    list-style-type: none;
+}
+
+
+.encabezado-navegacion ul li {
+    display: flex;
+    flex-direction: column; 
+}
+
+.encabezado-navegacion ul li a {
+    color: rgb(249, 249, 249) ;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+/* comienzo del body del index.html */
+
+.cuerpo-horarios {
+    border-style:solid;
+    border-width: 10px;
+    background-image: url(../public/fondo-horarios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuerpo-horario-tabla {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    border-style: dashed;
+    border-width: 10px;
+    width: 200px;
+    background-color: rgb(236, 195, 15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cuerpo-horario-tabla ul {
+    list-style-type: none;
+}
+
+.cuerpo-horario-tabla ul li {
+    padding-right: 25px;
+}
+
+/* estilo del footer */
+
+footer p {
+    font-family: 'Abril Fatface', cursive;  
+    color: aliceblue;
+    text-align: center;
+    background-color: #ff6961;
+    margin: 0;
+}
+
+.icono-redes {
+    text-align: center;
+    background-color: #f5443b;
+}
+
+/* inicio estilo atencion al cliente */
+
+.sugerencia {
+    background-color: bisque;
+    margin: auto;
+}
+
+
+
+.titulo-sugerencia {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-family: 'Abril Fatface', cursive; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    color: rgb(10, 10, 10);
+    text-align: center;
+}
+
+.titulo-sugerencia h1{
+    color: #ffcc00;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+
+.formulario {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+.formulario p {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.formulario input {
+    text-align: center;
+}
+
+.formulario img {
+    width: 550px;
+    height: 450px;
+
+    display: none;
+
+}
+
+/* inicio estilo ubicacion */
+
+.contenido-ubicacion {
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "subtitulo subtitulo"
+    "calle calle"
+    "mapa mapa";
+}
+
+.ubicacion {
+    text-align: center;
+    background-color: blanchedalmond;
+    margin: auto;
+}
+
+.ubicacion-titulo {
+    grid-area: titulo;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;  
+    margin: 0; 
+}
+
+.ubicacion h3 {
+    grid-area: subtitulo;
+}
+
+.ubicacion-informacion {
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin:0 auto;
+    background-color: rgb(236, 195, 15);
+}
+
+.ubicacion-informacion p {
+    grid-area: calle;
+}
+
+.ubicacion-lista {
+    list-style-type: none;
+    grid-area: mapa;
+}
+
+.ubicacion-lista li iframe {
+    height: 400px;
+    width: 300px;
+    padding-right: 30px;
+}
+
+/* inicio estilo productos */
+
+.producto {
+    background-color: #f8db68;
+    
+}
+
+.producto-estrella  {
+    list-style-type: none;
+    padding: 15px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.producto-estrella-parrafo {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-estrella-parrafo h2 {
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;  
+    color: aliceblue;
+    text-align: center;
+}
+
+.producto-estrella-parrafo h3 {
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    background-color: aliceblue;
+    color:#ffcc00;
+    text-align: center;
+}
+
+.producto-estrella-parrafo p {
+    max-width: 600px;
+    font-size: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.producto-estrella img {
+    width: 300px;
+    height: 300px;
+    margin: 20px 20px;
+}
+
+.contenedor-titulo-otros-productos {
+    height: 100px;
+
+    display: flex;
+    justify-items: center;
+}
+
+.titulo-otros-productos {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+.otros {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap:0;
+    border-width: 15px;
+    
+}
+
+.otros-productos {
+    background-color: aliceblue;
+    margin: 30px;
+    width: 250px;
+    text-align: center;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.otros-productos img {
+    width: 200px;
+    height: 200px;
+
+    align-self: center;
+}
+
+.otros-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+    font-size: 10px;
+}
+
+.contenedor-titulo-bebidas {
+    height: 40px;
+    padding-top: 30px;
+
+    display: flex;
+    justify-items: center;
+}
+
+.titulo-bebidas {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+
+.bebidas {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 0;
+    border-width: 15px;
+}
+
+.bebidas-productos {
+    background-color: aliceblue;
+    margin: 30px;
+    width: 250px;
+    text-align: center;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bebidas-productos img {
+    width: 200px;
+    height: 200px;
+
+    align-self: center;
+}
+
+.bebidas-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+    font-size: 10px;
+}
+
+/* inicio de la configuracion media para 768px */
+
+@media screen and (min-width:768px) {
+
+/* inicio del encabezado del index*/
+.encabezado-index {
+    background-image: url(../public/mostrador.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+
+.encabezado-navegacion-index  {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.encabezado-navegacion-index img {
+
+    width: 100px;
+    height: 100px;
+    position: relative;
+    padding-left: 10px;
+
+}
+
+.encabezado-navegacion-index ul li {
+    display: inline-block;
+    margin: 30px 20px;
+    
+}
+
+.encabezado-navegacion-index ul li a {
+    color: rgb(245, 229, 8) ;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+.encabezado-titulo {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+
+    padding-top: 130px;
+    margin-top: 120px;
+    
+
+}
+
+
+.encabezado-titulo h1 {
+    margin-bottom: 5px;
+    font-size: 50px;
+    color: rgb(245, 229, 8);
+}
+
+.encabezado-titulo h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #fdcae1;
+}
+
+.encabezado-titulo p {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: rgb(245, 229, 8);
+    padding-bottom: 20px;
+}
+
+/* inicio de la navegacion de los html de la carpeta pages */
+
+.encabezado-navegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100px;
+}
+
+
+.encabezado-navegacion img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    padding-left: 10px;
+
+}
+
+
+.encabezado-navegacion ul {
+    list-style-type: none;
+}
+
+
+.encabezado-navegacion ul li {
+    display: inline-block;
+    margin: 30px 20px;
+    
+}
+
+.encabezado-navegacion ul li a {
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color: rgb(248, 252, 249);
+}
+
+
+/* inicio  seccion atencion al cliente */
+
+.contenido-atencion {
+    background-color: #fdcae1;
+}
+
+.sugerencia {
+    background-color: bisque;
+    width: 700px;
+    height: 750px;
+    margin: auto;
+}
+
+
+
+.titulo-sugerencia {
+    padding-left: 35px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-family: 'Abril Fatface', cursive; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+}
+
+.titulo-sugerencia h1{
+    color: #ffcc00;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.formulario {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.formulario p {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.formulario input {
+    
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+}
+
+.formulario img {
+
+    display: block;
+    width: 350px;
+    height: 350px;
+
+}
+
+/* inicio seccion ubicacion */
+
+.contenido-ubicacion {
+    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-size: contain;
+
+
+    display: grid;
+    grid-template-areas: 
+    "titulo "
+    "subtitulo "
+    "calle "
+    "mapa ";
+}
+
+.ubicacion {
+    text-align: center;
+    background-color: blanchedalmond;
+    width: 500px;
+    height: 600px;
+
+}
+
+.ubicacion-titulo {
+    grid-area: titulo;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;  
+    margin: 0; 
+}
+
+.ubicacion h3 {
+    grid-area: subtitulo;
+}
+
+.ubicacion-informacion {
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
+
+    margin:0 auto;
+    background-color: rgb(236, 195, 15);
+}
+
+.ubicacion-informacion p {
+    grid-area: calle;
+}
+
+.ubicacion-lista {
+    list-style-type: none;
+    grid-area: mapa;
+}
+
+.ubicacion-lista li iframe {
+    height: 400px;
+    width: 400px;
+    padding-right: 30px;
+}
+
+/* inicio seccion productos */
+
+.producto {
+    background-color: #f8db68;
+    
+}
+
+.producto-estrella  {
+    list-style-type: none;
+    padding: 15px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.producto-estrella-parrafo {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-estrella-parrafo h2 {
+    font-size: 25px;
+    font-family: 'Abril Fatface', cursive;  
+    color: aliceblue;
+    text-align: center;
+}
+
+.producto-estrella-parrafo h3 {
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    background-color: aliceblue;
+    color:#ffcc00;
+    text-align: center;
+}
+
+.producto-estrella-parrafo p {
+    max-width: 600px;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+.producto-estrella img {
+    width: 300px;
+    height: 300px;
+    margin: 20px 20px;
+}
+
+.contenedor-titulo-otros-productos {
+    height: 100px;
+
+    display: flex;
+    justify-items: center;
+}
+
+.titulo-otros-productos {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+.otros {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap:0;
+    border-width: 15px;
+    
+}
+
+.otros-productos {
+    background-color: aliceblue;
+    margin: 30px;
+    width: 250px;
+    text-align: center;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.otros-productos img {
+    width: 200px;
+    height: 200px;
+
+    align-self: center;
+}
+
+.otros-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+    font-size: 10px;
+}
+
+.contenedor-titulo-bebidas {
+    height: 40px;
+    padding-top: 30px;
+
+    display: flex;
+    justify-items: center;
+}
+
+.titulo-bebidas {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+
+.bebidas {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 0;
+    border-width: 15px;
+}
+
+.bebidas-productos {
+    background-color: aliceblue;
+    margin: 30px;
+    width: 250px;
+    text-align: center;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bebidas-productos img {
+    width: 200px;
+    height: 200px;
+
+    align-self: center;
+}
+
+.bebidas-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+    font-size: 10px;
+}
+
+}
+
+/* inicio configuracion media para 1280px */
+
+@media screen and (min-width:1280px) {
+
+    /* inicio del encabezado del index*/
+.encabezado-index {
+    background-image: url(../public/mostrador.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+
+.encabezado-navegacion-index  {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.encabezado-navegacion-index img {
+
+    width: 150px;
+    height: 150px;
+    position: relative;
+    padding-left: 10px;
+
+}
+
+.encabezado-navegacion-index ul li {
+    display: inline-block;
+    margin: 50px 30px;
+    
+}
+
+.encabezado-navegacion-index ul li a {
+    color: rgb(245, 229, 8) ;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+.encabezado-titulo {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+
+    padding-top: 90px;
+    margin-top: 90px;
+}
+
+
+.encabezado-titulo h1 {
+    margin-bottom: 5px;
+    font-size: 80px;
+    color: rgb(245, 229, 8);
+}
+
+.encabezado-titulo h3 {
+    text-align: center;
+    font-size: 60px;
+    color: #fdcae1;
+}
+
+.encabezado-titulo p {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: rgb(245, 229, 8);
+    padding-bottom: 20px;
+}
+
+.cuerpo-horarios {
+    border-style:solid;
+    border-width: 10px;
+    height: 900px;
+    background-image: url(../public/fondo-horarios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuerpo-horario-tabla {
+    font-size: 30px;
+    text-align: center;
+    margin:0 auto;
+    border-style: dashed;
+    border-width: 10px;
+    width: 400px;
+    height:880px;
+    background-color: rgb(236, 195, 15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cuerpo-horario-tabla ul {
+    list-style-type: none;
+}
+
+/* inicio de la navegacion de los html de la carpeta pages */
+
+.encabezado-navegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100px
+    ;
+}
+
+
+.encabezado-navegacion img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    padding-left: 10px;
+
+}
+
+
+.encabezado-navegacion ul {
+    list-style-type: none;
+}
+
+
+.encabezado-navegacion ul li {
+    display: inline-block;
+    margin: 50px 30px;
+    
+}
+
+.encabezado-navegacion ul li a {
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color: rgb(248, 252, 249);
+}
+
+/* inicio  seccion atencion al cliente */
+
+.contenido-atencion {
+    background-image: url(../public/ejemplo-plato-3.jpg);
+    background-size: contain;
+    background-repeat:round;
+}
+
+.sugerencia {
+    background-color: bisque;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+
+
+
+.titulo-sugerencia {
+    padding-left: 35px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-family: 'Abril Fatface', cursive; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+}
+
+.titulo-sugerencia h1{
+    color: #ffcc00;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.formulario {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.formulario p {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.formulario input {
+    
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+}
+
+.formulario img {
+
+    display: block;
+    width: 350px;
+    height: 350px;
+
+}
+
+/* inicio seccion ubicacion */
+
+.contenido-ubicacion {
+    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-size: contain;
+    background-repeat: space;
+
+
+    display: grid;
+    grid-template-areas: 
+    "titulo "
+    "subtitulo "
+    "calle "
+    "mapa ";
+}
+
+.ubicacion {
+    text-align: center;
+    background-color: blanchedalmond;
+    width: 650px;
+    height: 600px;
+
+}
+
+.ubicacion-titulo {
+    grid-area: titulo;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;  
+    margin: 0; 
+}
+
+.ubicacion h3 {
+    grid-area: subtitulo;
+}
+
+.ubicacion-informacion {
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
+
+    margin:0 auto;
+    background-color: rgb(236, 195, 15);
+}
+
+.ubicacion-informacion p {
+    grid-area: calle;
+}
+
+.ubicacion-lista {
+    list-style-type: none;
+    grid-area: mapa;
+}
+
+.ubicacion-lista li iframe {
+    height: 400px;
+    width: 550px;
+    padding-right: 30px;
+}
+
+/* inicio seccion productos */
+
+.producto {
+    background-color: #f8db68;
+    
+}
+
+.producto-estrella  {
+    list-style-type: none;
+    padding: 15px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.producto-estrella-parrafo {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-estrella-parrafo h2 {
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;  
+    color: aliceblue;
+    text-align: center;
+}
+
+.producto-estrella-parrafo h3 {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    background-color: aliceblue;
+    color:#ffcc00;
+    text-align: center;
+}
+
+.producto-estrella-parrafo p {
+    max-width: 600px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.producto-estrella img {
+    width: 400px;
+    height: 400px;
+    margin: 20px 20px;
+}
+
+.contenedor-titulo-otros-productos {
+    height: 100px;
+
+    display: flex;
+    justify-items: center;
+}
+
+.titulo-otros-productos {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+.otros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap:0;
+    border-width: 15px;
+    
+}
+
+.otros-productos {
+    background-color: aliceblue;
+    margin: 30px;
+    width: 300px;
+    text-align: center;
+    height: 330px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.otros-productos img {
+    width: 250px;
+    height: 250px;
+
+    align-self: center;
+}
+
+.otros-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+    font-size: 20px;
+}
+
+.contenedor-titulo-bebidas {
+    height: 40px;
+    padding-top: 30px;
+
+    display: flex;
+    justify-items: center;
+}
+
+.titulo-bebidas {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+
+.bebidas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 0;
+    border-width: 15px;
+}
+
+.bebidas-productos {
+    background-color: aliceblue;
+    margin: 30px;
+    width: 300px;
+    text-align: center;
+    height: 330px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bebidas-productos img {
+    width: 250px;
+    height: 250px;
+
+    align-self: center;
+}
+
+.bebidas-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+    font-size: 20px;
+}
+
+
+
+}
+
+
+/* inicio de la configuracion media para 1900px */
+
+@media screen and (min-width:1900px) {
+
+    /* inicio del index.html */
+
+.encabezado-index {
+    background-image:url(../public/mostrador.jpg);
+    background-size: cover;
+    height: 1400px;
+}
+
+.encabezado-navegacion-index  {
+    
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.encabezado-navegacion-index img {
+
+    width: 150px;
+    height: 145px;
+    position: relative;
+
+}
+
+.encabezado-navegacion-index ul li {
+    display:inline-block;
+    margin: 70px 50px;
+}
+
+.encabezado-navegacion-index ul li a {
+    color: rgb(245, 229, 8) ;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+.encabezado-titulo h1 {
+    padding-top: 100px;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    font-size: 150px;
+    color: rgb(245, 229, 8);
+}
+
+.encabezado-titulo h3 {
+    padding-bottom: 5px;
+    padding-left: 900px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 90px;
+    color: aliceblue;
+}
+
+.encabezado-titulo p {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: rgb(245, 229, 8);
+}
+
+.cuerpo-horarios {
+    border-style:solid;
+    border-width: 10px;
+    height: 1040px;
+    background-image: url(../public/fondo-horarios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuerpo-horario-tabla {
+    font-size: 40px;
+    text-align: center;
+    margin:0 auto;
+    border-style: dashed;
+    border-width: 10px;
+    width: 500px;
+    height: 1020px;
+    background-color: rgb(236, 195, 15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cuerpo-horario-tabla ul {
+    list-style-type: none;
+}
+
+/* inicio de la navegacion de los html de la carpeta pages */
+
+.encabezado-navegacion {
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+
+    background-color: #ffcc00;
+
+    height: 150px;
+}
+
+
+.encabezado-navegacion img {
+    width: 150px;
+    height: 145px;
+    position: relative;
+}
+
+
+.encabezado-navegacion ul {
+    list-style-type: none;
+}
+
+
+.encabezado-navegacion ul li {
+    display:inline-block;
+    margin: 70px 50px;   
+}
+
+.encabezado-navegacion ul li a {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(248, 252, 249);
+    text-decoration: none;
+}
+
+/* inicio  seccion atencion al cliente */
+
+.contenido-atencion {
+    background-image: url(../public/ejemplo-plato-3.jpg);
+    background-repeat:space;
+    background-size: contain;
+}
+
+.sugerencia {
+    background-color: bisque;
+    width: 1090px;
+    height: 1000px;
+    margin: auto;
+}
+
+
+
+.titulo-sugerencia {
+    padding-left: 35px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-family: 'Abril Fatface', cursive; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    color: rgb(10, 10, 10);
+}
+
+.titulo-sugerencia h1{
+    color: #ffcc00;
+    font-size: 70px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.formulario {
+    width: 100%;
+    font-size: 30px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.formulario p {
+    text-align: center;
+    width: 400px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.formulario input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+}
+
+.formulario img {
+
+    display: block;
+    width: 550px;
+    height: 450px;
+
+}
+
+/* inicio seccion ubicacion */
+
+.contenido-ubicacion {
+    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-repeat: space;
+    background-size: contain;
+    display: flex;
+}
+
+.ubicacion {
+    text-align: center;
+    background-color: blanchedalmond;
+    width: 1500px;
+    margin: auto;
+    height: 1000px;
+}
+
+.ubicacion-titulo {
+    font-size: 90px;
+    font-family: 'Abril Fatface', cursive;  
+    margin: 0; 
+}
+
+.ubicacion h3 {
+    font-size: 30px;
+}
+
+.ubicacion-informacion {
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin:0 auto;
+    width: 1500px;
+    background-color: rgb(236, 195, 15);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubicacion-lista {
+    list-style-type: none;
+}
+
+.ubicacion-lista li iframe {
+    height: 600px;
+    width: 1000px;
+    padding-right: 30px;
+}
+
+/* inicio seccion productos */
+
+.producto {
+    background-color: #f8db68;
+    
+}
+
+.producto-estrella  {
+    list-style-type: none;
+    padding: 15px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.producto-estrella-parrafo {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-estrella-parrafo h2 {
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;  
+    color: aliceblue;
+}
+
+.producto-estrella-parrafo h3 {
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    background-color: aliceblue;
+    color:#ffcc00;
+    text-align: center;
+}
+
+.producto-estrella-parrafo p {
+    max-width: 600px;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.producto-estrella img {
+    width: 650px;
+    height: 650px;
+    margin: 50px 50px;
+}
+
+.contenedor-titulo-otros-productos {
+    height: 200px;
+
+    display: flex;
+    justify-items: center;
+}
+
+.titulo-otros-productos {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+.otros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 25px;
+    border-width: 15px;
+    
+}
+
+.otros-productos {
+    background-color: aliceblue;
+    margin: 30px;
+    width: 600px;
+    text-align: center;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.otros-productos img {
+    width: 500px;
+    height: 400px;
+
+    align-self: center;
+}
+
+.otros-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+    font-size: 30px;
+}
+
+.contenedor-titulo-bebidas {
+    height: 200px;
+
+    display: flex;
+    justify-items: center;
+}
+
+.titulo-bebidas {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+
+.bebidas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 25px;
+    border-width: 15px;
+}
+
+.bebidas-productos {
+    background-color: aliceblue;
+    margin: 30px;
+    width: 600px;
+    text-align: center;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bebidas-productos img {
+    width: 500px;
+    height: 400px;
+
+    align-self: center;
+}
+
+.bebidas-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+    font-size: 30px;
+}
+
+
+}
