@@ -101,12 +101,13 @@ footer p {
 .sugerencia {
     background-color: bisque;
     margin: auto;
+    height: 550px;
 }
 
 
 
 .titulo-sugerencia {
-    margin-top: 0px;
+    padding-top: 50px;
     margin-bottom: 25px;
     font-family: 'Abril Fatface', cursive; 
 
@@ -127,83 +128,36 @@ footer p {
     background-color: aliceblue;
 }
 
-
-.formulario {
-    width: 100%;
-    font-size: 20px;
-    padding: 5px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-right: 60px;
-}
-
-.formulario p {
-    width: 200px;
-    height: 100px;
-    text-align: center;
-    margin: auto;
-}
-
-.formulario input {
-    text-align: center;
-}
-
-.formulario img {
-    width: 550px;
-    height: 450px;
-
-    display: none;
-
-}
-
 /* inicio estilo ubicacion */
 
 .contenido-ubicacion {
-    display: grid;
-    grid-template-areas: 
-    "titulo titulo"
-    "subtitulo subtitulo"
-    "calle calle"
-    "mapa mapa";
+    background-color: blanchedalmond;
 }
 
 .ubicacion {
     text-align: center;
     background-color: blanchedalmond;
-    margin: auto;
+    margin: auto; 
 }
 
 .ubicacion-titulo {
-    grid-area: titulo;
     padding-top: 20px;
     font-size: 30px;
     font-family: 'Abril Fatface', cursive;  
     margin: 0; 
 }
 
-.ubicacion h3 {
-    grid-area: subtitulo;
-}
-
 .ubicacion-informacion {
     font-size: 15px;
     font-family: 'Pacifico', cursive;
     text-align: center;
-    /* margin:0 auto; */
     background-color: rgb(236, 195, 15);
 
     width: 100%;
 }
 
-.ubicacion-informacion p {
-    grid-area: calle;
-}
-
 .ubicacion-lista {
     list-style-type: none;
-    grid-area: mapa;
 }
 
 .ubicacion-lista li iframe {
@@ -341,6 +295,9 @@ footer p {
     font-family: 'Pacifico', cursive;
     background-color:#fdcae1 ; 
     font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
 }
 
 .contenedor-titulo-bebidas {
@@ -403,6 +360,9 @@ footer p {
     font-family: 'Pacifico', cursive;
     background-color:#fdcae1 ; 
     font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
 }
 
 /* inicio de la configuracion media para 768px */
@@ -478,46 +438,6 @@ footer p {
     padding-bottom: 20px;
 }
 
-/* inicio de la navegacion de los html de la carpeta pages */
-
-.encabezado-navegacion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    height: 100px;
-}
-
-
-.encabezado-navegacion img {
-    width: 90px;
-    height: 90px;
-    position: relative;
-    padding-left: 10px;
-
-}
-
-
-.encabezado-navegacion ul {
-    list-style-type: none;
-}
-
-
-.encabezado-navegacion ul li {
-    display: inline-block;
-    margin: 30px 20px;
-    
-}
-
-.encabezado-navegacion ul li a {
-    font-size: 18px;
-    font-family: 'Pacifico', cursive;
-    text-decoration: none;
-    color: rgb(248, 252, 249);
-}
-
-
 /* inicio  seccion atencion al cliente */
 
 .contenido-atencion {
@@ -555,44 +475,6 @@ footer p {
     background-color: aliceblue;
 }
 
-.formulario {
-    width: 100%;
-    font-size: 20px;
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    
-}
-
-.formulario p {
-    display: flex;
-    flex-direction: column;
-    
-    text-align: center;
-    font-size: 20px;
-    width: 300px;
-    height: 120px;
-    margin: 0 auto;
-}
-
-.formulario input {
-    
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    text-align: center;
-}
-
-.formulario img {
-
-    display: block;
-    width: 350px;
-    height: 350px;
-
-}
-
 /* inicio seccion ubicacion */
 
 .contenido-ubicacion {
@@ -612,6 +494,7 @@ footer p {
     background-color: blanchedalmond;
     width: 500px;
     height: 600px;
+    margin: auto;
 
 }
 
@@ -806,6 +689,16 @@ footer p {
 
 }
 
+/* inicio resolucion 1024px para solucionar un problema en la imagen de fondo de la pagina ubicacion */
+@media screen and (min-width: 1024px){
+.contenido-ubicacion {
+    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-size: contain;
+    background-repeat:space;
+}
+    
+}
+
 /* inicio configuracion media para 1280px */
 
 @media screen and (min-width:1280px) {
@@ -816,37 +709,6 @@ footer p {
     background-size: cover;
     background-position: center;
     height: 1000px;
-}
-
-
-.encabezado-navegacion-index  {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.encabezado-navegacion-index img {
-
-    width: 150px;
-    height: 150px;
-    position: relative;
-    padding-left: 10px;
-
-}
-
-.encabezado-navegacion-index ul li {
-    display: inline-block;
-    margin: 50px 30px;
-    
-}
-
-.encabezado-navegacion-index ul li a {
-    color: rgb(245, 229, 8) ;
-    font-size: 25px;
-    font-family: 'Pacifico', cursive;
-    text-decoration: none;
 }
 
 .encabezado-titulo {
@@ -909,46 +771,6 @@ footer p {
     list-style-type: none;
 }
 
-/* inicio de la navegacion de los html de la carpeta pages */
-
-.encabezado-navegacion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    height: 100px
-    ;
-}
-
-
-.encabezado-navegacion img {
-    width: 90px;
-    height: 90px;
-    position: relative;
-    padding-left: 10px;
-
-}
-
-
-.encabezado-navegacion ul {
-    list-style-type: none;
-}
-
-
-.encabezado-navegacion ul li {
-    display: inline-block;
-    margin: 50px 30px;
-    
-}
-
-.encabezado-navegacion ul li a {
-    font-size: 25px;
-    font-family: 'Pacifico', cursive;
-    text-decoration: none;
-    color: rgb(248, 252, 249);
-}
-
 /* inicio  seccion atencion al cliente */
 
 .contenido-atencion {
@@ -988,44 +810,6 @@ footer p {
     background-color: aliceblue;
 }
 
-.formulario {
-    width: 100%;
-    font-size: 20px;
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    
-}
-
-.formulario p {
-    display: flex;
-    flex-direction: column;
-    
-    text-align: center;
-    font-size: 20px;
-    width: 300px;
-    height: 120px;
-    margin: 0 auto;
-}
-
-.formulario input {
-    
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    text-align: center;
-}
-
-.formulario img {
-
-    display: block;
-    width: 350px;
-    height: 350px;
-
-}
-
 /* inicio seccion ubicacion */
 
 .contenido-ubicacion {
@@ -1047,6 +831,7 @@ footer p {
     background-color: blanchedalmond;
     width: 650px;
     height: 600px;
+    margin: auto;
 
 }
 
@@ -1186,6 +971,9 @@ footer p {
     font-family: 'Pacifico', cursive;
     background-color:#fdcae1 ; 
     font-size: 20px;
+
+    height: 30px;
+    line-height: 30px;
 }
 
 .contenedor-titulo-bebidas {
@@ -1238,9 +1026,9 @@ footer p {
     font-family: 'Pacifico', cursive;
     background-color:#fdcae1 ; 
     font-size: 20px;
+    height: 30px;
+    line-height: 30px;
 }
-
-
 
 }
 
@@ -1255,36 +1043,6 @@ footer p {
     background-image:url(../public/mostrador.jpg);
     background-size: cover;
     height: 1400px;
-}
-
-.encabezado-navegacion-index  {
-    
-    padding: 5px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.encabezado-navegacion-index img {
-
-    width: 150px;
-    height: 145px;
-    position: relative;
-
-}
-
-.encabezado-navegacion-index ul li {
-    display:inline-block;
-    margin: 70px 50px;
-}
-
-.encabezado-navegacion-index ul li a {
-    color: rgb(245, 229, 8) ;
-    font-size: 30px;
-    font-family: 'Pacifico', cursive;
-    text-decoration: none;
 }
 
 .encabezado-titulo h1 {
@@ -1340,46 +1098,6 @@ footer p {
     list-style-type: none;
 }
 
-/* inicio de la navegacion de los html de la carpeta pages */
-
-.encabezado-navegacion {
-    padding: 5px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-
-    background-color: #ffcc00;
-
-    height: 150px;
-}
-
-
-.encabezado-navegacion img {
-    width: 150px;
-    height: 145px;
-    position: relative;
-}
-
-
-.encabezado-navegacion ul {
-    list-style-type: none;
-}
-
-
-.encabezado-navegacion ul li {
-    display:inline-block;
-    margin: 70px 50px;   
-}
-
-.encabezado-navegacion ul li a {
-    font-size: 30px;
-    font-family: 'Pacifico', cursive;
-    color: rgb(248, 252, 249);
-    text-decoration: none;
-}
-
 /* inicio  seccion atencion al cliente */
 
 .contenido-atencion {
@@ -1394,8 +1112,6 @@ footer p {
     height: 1000px;
     margin: auto;
 }
-
-
 
 .titulo-sugerencia {
     padding-left: 35px;
@@ -1572,6 +1288,10 @@ footer p {
     font-family: 'Pacifico', cursive;
     background-color:#fdcae1 ; 
     font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .contenedor-titulo-bebidas {
@@ -1623,7 +1343,10 @@ footer p {
     font-family: 'Pacifico', cursive;
     background-color:#fdcae1 ; 
     font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
-
 
 }
